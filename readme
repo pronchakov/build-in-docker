@@ -1,0 +1,6 @@
+To build:
+    mvn clean package
+
+To run:
+    cd target
+    java -jar build-in-docker.jar
