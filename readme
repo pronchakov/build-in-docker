@@ -1,6 +1,8 @@
-To build:
+To build compile and build java:
     mvn clean package
 
-To run:
-    cd target
-    java -jar build-in-docker.jar
+To build docker image:
+    docker build -t build-in-docker .
+
+To run docker container:
+    docker run -it --rm build-in-docker
