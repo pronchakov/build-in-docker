@@ -1,5 +1,5 @@
 To compile and build java:
-    docker run -it --rm --user $(id -u):$(id -g) -v ~/.m2/repository:/tmp/.m2/repository -v $(pwd):/tmp/src/ -w /tmp/src maven:3.6.3-openjdk-15 mvn clean package -Dmaven.repo.local=/tmp/.m2/repository
+    docker run --rm --user $(id -u):$(id -g) -v ~/.m2/repository:/tmp/.m2/repository -v $(pwd):/tmp/src/ -w /tmp/src maven:3.6.3-openjdk-15 mvn clean package -Dmaven.repo.local=/tmp/.m2/repository
 
 To build docker image:
     docker build -t build-in-docker .
